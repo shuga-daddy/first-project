@@ -1,0 +1,404 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--var-primary-color);
+}
+nav{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--var-invalid-color);
+    box-shadow: 0 0px 4px 1px grey  ;
+}
+.nav-switch{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.mode{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.fa-solid.fa-moon.b{
+    display: none;
+}
+.nav-link{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+nav a{  
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.logo{
+    color: var(--var-text-color);
+    font-size: 2rem;
+}
+.fa-p{
+    color: var(--var-logo-color);
+    font-size: 2rem;
+}
+.indicator{
+    color: var(--var-indicator-color);
+    font-size: 1.2rem;
+}
+.indicator2{
+    color: var(--var-indicator-color);
+    font-size: 1.2rem;
+}
+.fa-sun{
+    color: var(--var-indicator-color);
+    font-size: 2rem;
+}
+.fa-moon{
+    font-size: 2rem;
+    color: white;
+}
+main{
+    height: fit-content;
+    width: 100%;
+    padding: 0 80px;
+    background-color: var(--var-primary-color);
+}
+.fa-facebook, .fa-square-instagram, .fa-x-twitter, .fa-linkedin, .fa-circle-dot, .fa-beat {
+    color: var(--var-text-color);
+}
+.about{
+    color: var(--var-text-color);
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--var-primary-color);
+    font-size: 1.1rem;
+}
+.info{
+    width: 500px;
+    height: 300px;
+}
+.info a{
+    color: var(--var-text-color);
+}
+.about img{
+    margin-right: 13px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 10px 10px 2px 1px var(--var-shadow-color);
+}
+.about-me{
+    margin-top: 30px;
+    color: var(--var-text-color);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--var-secondary-color)
+}
+.about-sign{
+    color: var(--var-sign-text-color);
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background-color: var(--var-sign-color);
+    font-weight: 900;
+
+}
+.content-aboutme{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+.img-about-me{
+    margin-left: 13px;
+    width: 200px;
+    height: 300px;
+    box-shadow: -10px 10px 2px 1px var(--var-shadow-color);
+}
+.about-cont{
+    width: 500px;
+    height: fit-content;
+}
+.skills{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 20px;
+    background-color: var(--var-primary-color)
+}
+.skills-sign{
+    color: var(--var-sign-text-color);
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background-color: var(--var-sign-color);
+    font-weight: 900;
+}
+.skill-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    color: var(--var-text-color);
+}
+h3{
+    font-size: 1.4rem;
+    color: var(--var-text-color);
+}
+.skill-cont div{
+    color: var(--var-text-color);
+    font-size: 1.5rem;
+}
+.github svg{
+    fill: var(--var-github-color);
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 30px;
+}
+.proof{
+    background-color: var(--var-secondary-color);
+    width: 80%;
+    height: 350px;
+    padding: 25px 10px;
+    display: flex;
+    gap: 20px;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.proof::-webkit-scrollbar{
+    display: none;
+}
+.experience-sign{
+    color: var(--var-sign-text-color);
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background-color: var(--var-sign-color);
+    font-weight: 900;
+}
+.proof img{
+    width: 50%;
+    height: 300px;
+}
+a{
+    text-decoration: none;
+}
+nav a, footer a{
+    color: var(--var-link-color);
+}
+a:hover{
+    color: var(--var-hover-color);
+}
+footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 65px;
+    padding: 0 80px;
+    background-color: var(--var-invalid-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -1px 2px 2px grey;
+}
+.alert{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+marquee{
+    color: olivedrab;
+    background-color: pink;
+    font-size: 1.1 rem;
+}
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: gold;
+    transition: all .5s;
+}
+.nav2 {
+    display: none;
+    flex-direction: column;
+    gap: 45px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: var(--var-invalid-color);
+    width: 100%;
+    padding: 20px 30px;
+}
+.nav2 .contact {
+    width: 100%;
+    text-align: center;
+}
+
+:root{
+    --var-primary-color: rgb(249, 250, 251);
+    --var-secondary-color: rgb(255, 255,255);
+    --var-text-color: rgb(9, 50, 63); 
+    --var-sign-color: rgb(229, 231, 235);
+    --var-sign-text-color: rgb(9, 50, 63);
+    --var-link-color: skyblue;
+    --var-hover-color: brown;
+    --var-github-color: black;
+    --var-shadow-color: rgb(229, 231, 235);
+    --var-logo-color: goldenrod;
+    --var-indicator-color: rgb(9, 50, 63);
+    --var-invalid-color: cadetblue;
+}
+.dark{
+    --var-primary-color: rgb(3, 7, 18);
+    --var-secondary-color: rgb(22, 22, 22);
+    --var-text-color: white; 
+    --var-sign-color: rgb(229, 231, 235);
+    --var-sign-text-color: rgb(9, 50, 63);
+    --var-link-color: skyblue;
+    --var-hover-color: brown;
+    --var-shadow-color: rgb(55, 65, 81);
+    --var-logo-color: goldenrod;
+    --var-invalid-color: rgb(3, 7, 18);
+    --var-indicator-color: white;
+    --var-github-color: azure;
+}
+
+@media  screen and (max-width: 1050px) {
+    .nav-link, .nav-switch {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+    .alert{
+        display: none;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+        gap: 50px;
+    }
+    .proof{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .skill-cont div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .proof img{
+        width: 100%;
+        
+    }
+    .info{
+        width: 200px;
+        height: fit-content;
+    }
+    .about-cont{
+        width: 200px;
+        height: fit-content;
+    }
+    .about img{
+        width: 200px;
+        height: 300px;
+    }
+    .about-me .content-aboutme{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .hamburger-menu.active .first-span{
+        transform: rotate(60deg) translateY(13px);
+    }
+    .hamburger-menu.active .sec-span{
+        transform: rotate(-60deg) translateY(-13px);
+    }
+    .mode{
+        display: flex;
+        gap: 2px;
+        color: var(--var-indicator-color);
+    }
+    .nav2.show {
+        display: flex;
+    }
+    nav {
+        padding: 0 50px;
+    }
+    main{
+        padding: 0 50px;
+    }
+    footer{
+        padding: 0 50px;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 0 30px;
+    }
+    main{
+        padding: 0 30px;
+    }
+    footer{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    nav {
+        padding: 0 20px;
+    }
+    main{
+        padding: 0 20px;
+    }
+    footer{
+        padding: 0 20px;
+    }
+}
